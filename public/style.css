@@ -1,16 +1,30 @@
 /* the 'body' selector is required for the tests to pass */
+
+
 /* You can change the style attributes if you want */
+
 body {
-  background-color: #222;
-  color: #ddd;
-  text-align: center;
-  font-family: sans-serif;
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 h1 {
-  font-size: 4em;
+    font-size: 4em;
 }
 
-input[type=text], label {
-  margin-bottom: 8px;
+input[type=text],
+label {
+    margin-bottom: 8px;
+}
+
+.error {
+    border-color: rgb(228, 16, 16);
+}
+
+.error-message {
+    color: rgb(230, 0, 0);
+    font-style: itelic;
+    margin-bottom: 1em;
 }
