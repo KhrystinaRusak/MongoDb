@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mogoose = require('mogoose');
+const mongoose = require('mogoose');
 const auth = require('./router.auth');
 const passport = require('.middleware/authJwtMiddleware')(passport);
 
@@ -21,9 +21,5 @@ async function start() {
 
 // запись полученного токена в localStorage
 localStorage.setItem('token', token);
-
-headers: {
-    'Authorization': 'Bearer token'
-}
 
 start();
